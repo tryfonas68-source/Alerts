@@ -1,0 +1,14 @@
+{
+  "setups": [
+    {"id": "BTC_riskoff", "coin": "BTC", "type": "below", "level": 80300, "emoji": "🛑", "label": "ΚΑΤΩ ΑΠΟ 80.300", "note": "Κλείσε όλα τα long σε alts"},
+    {"id": "ZK_bo", "coin": "ZK", "type": "breakout_long", "level": 0.0163, "needs_volume": true, "emoji": "🚀", "label": "breakout LONG", "stop": "0.01485", "tp": "0.0188", "margin": "$169 x2"},
+    {"id": "TIA_bo", "coin": "TIA", "type": "breakout_long", "level": 0.635, "needs_volume": true, "emoji": "🚀", "label": "breakout LONG", "stop": "0.598", "tp": "0.700", "margin": "$257 x2"},
+    {"id": "WLD_bo", "coin": "WLD", "type": "breakout_long", "level": 0.576, "needs_volume": true, "emoji": "🚀", "label": "breakout LONG", "stop": "0.548", "tp": "0.620", "margin": "$309 x2"},
+    {"id": "NEAR_bo", "coin": "NEAR", "type": "breakout_long", "level": 5.60, "needs_volume": true, "emoji": "🚀", "label": "breakout LONG", "stop": "5.43", "tp": "5.88", "margin": "$494 x2"},
+    {"id": "STRK_bo", "coin": "STRK", "type": "breakout_long", "level": 0.1230, "needs_volume": true, "emoji": "🚀", "label": "breakout LONG", "stop": "0.1150", "tp": "0.140", "margin": "$215 x2"},
+    {"id": "ETH_short", "coin": "ETH", "type": "breakdown_short", "level": 2465, "needs_volume": true, "emoji": "📉", "label": "breakdown SHORT", "stop": "2520", "tp": "2385", "margin": "$269 x2"},
+    {"id": "AERO_stop", "coin": "AERO", "type": "below", "level": 0.88, "emoji": "🔻", "label": "STOP (Revolut)", "note": "Πούλα τα AERO"},
+    {"id": "AERO_tp1", "coin": "AERO", "type": "above", "level": 1.02, "emoji": "💰", "label": "Στόχος 1 (Revolut)", "note": "Πούλα τη μισή"},
+    {"id": "AERO_tp2", "coin": "AERO", "type": "above", "level": 1.10, "emoji": "💰", "label": "Στόχος 2 (Revolut)", "note": "Πούλα το υπόλοιπο"}
+  ]
+}
