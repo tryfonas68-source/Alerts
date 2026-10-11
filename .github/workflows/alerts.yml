@@ -1,31 +1,26 @@
 name: trading-alerts
-
 on:
   schedule:
     - cron: "*/5 * * * *"
   workflow_dispatch:
-
 permissions:
   contents: write
-
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 4
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install requests
-      - name: Έλεγχος τιμών
+      - run: python alerts.py
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python alerts.py
-      - name: Αποθήκευση κατάστασης
-        run: |
-          git config user.name "alerts-bot"
-          git config user.email "alerts-bot@users.noreply.github.com"
+      - run: |
+          git config user.name bot
+          git config user.email bot@x.com
           git add state.json
-          git diff --cached --quiet || (git commit -m "state" && git push)
+          git commit -m state || true
+          git push || true
