@@ -3,5 +3,6 @@
  "NEAR_bo": "armed",
  "WLD_bo": "armed",
  "ZK_bo": "armed",
- "STRK_bo": "armed"
+ "STRK_bo": "armed",
+ "ETH_short": "fired"
 }
