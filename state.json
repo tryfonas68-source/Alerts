@@ -4,6 +4,6 @@
  "WLD_bo": "armed",
  "ZK_bo": "armed",
  "STRK_bo": "armed",
- "ETH_short": "armed",
- "AERO_stop": "armed"
+ "ETH_short": "fired",
+ "AERO_stop": "fired"
 }
