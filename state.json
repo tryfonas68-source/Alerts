@@ -5,5 +5,6 @@
  "ZK_bo": "fired",
  "STRK_bo": "armed",
  "ETH_short": "fired",
- "AERO_stop": "armed"
+ "AERO_stop": "armed",
+ "TIA_bo": "fired"
 }
