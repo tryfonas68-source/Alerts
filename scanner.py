@@ -182,3 +182,8 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+# μετά τη σάρωση
+print(f"Σαρώθηκαν {len(markets)} αγορές, σήματα: {len(signals)}")
+
+# μετά την αποστολή στο Telegram
+print("Telegram:", r.status_code, r.text[:200])
