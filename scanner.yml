@@ -28,3 +28,7 @@ jobs:
           git add scanner_state.json || true
           git commit -m scan || true
           git push || true
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/10 * * * *"
