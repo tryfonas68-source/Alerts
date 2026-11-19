@@ -1,5 +1,7 @@
 name: trading-alerts
-
+on:
+  schedule:
+    - cron: "*/10 * * * *"
 on:
   schedule:
     - cron: "*/5 * * * *"
